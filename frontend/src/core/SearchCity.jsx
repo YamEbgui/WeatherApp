@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Button, Form, FormControl } from "react-bootstrap";
+import { weatherMiddleware } from "../utils/middleware";
 
 export default function SearchCity() {
   const [city, setCity] = useState("");
+  const dispatch = useDispatch();
 
   function handleInput(event) {
     event.preventDefault();
@@ -17,14 +20,14 @@ export default function SearchCity() {
           defaultValue={city}
           onInput={handleInput}
           type="search"
-          placeholder="Search"
+          placeholder="Enter city"
           className="me-2"
           aria-label="Search"
         />
         <Button
           onClick={(e) => {
             e.preventDefault();
-            console.log(city);
+            dispatch(weatherMiddleware(city));
           }}
           variant="secondary"
         >
