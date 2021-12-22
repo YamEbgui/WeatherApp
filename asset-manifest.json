@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/WeatherApp/static/js/main.6547ca0a.js",
+    "static/media/weatherIcon.png": "/WeatherApp/static/media/weatherIcon.7ec32d320a5394af98f9.png",
+    "index.html": "/WeatherApp/index.html",
+    "main.6547ca0a.js.map": "/WeatherApp/static/js/main.6547ca0a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6547ca0a.js"
+  ]
+}
